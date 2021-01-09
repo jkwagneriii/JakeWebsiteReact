@@ -71,7 +71,11 @@ const Navbar = () => {
     const classes = useStyles()
 
     const sideList = slider => (
-        <Box className={classes.menuSliderContainer} component="div">
+        <Box 
+        className={classes.menuSliderContainer} 
+        component="div"
+        onClick={toggleSlider(slider, false)}
+        >
             <Avatar className={classes.avatar} src={avatar} alt="Jake Wagner" />
             <Divider />
             <List>
@@ -100,7 +104,9 @@ const Navbar = () => {
                     </Typography>
                     <MobileRightMenuSlider
                     anchor="right"
-                    open={state.right}>
+                    open={state.right}
+                    onClose={toggleSlider("right", false)}
+                    >
                         {sideList("right")}
                     </MobileRightMenuSlider>
                 </Toolbar>
