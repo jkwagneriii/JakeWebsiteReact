@@ -17,10 +17,10 @@ const useStyles = makeStyles(theme=> ({
         margin: theme.spacing(1),
     },
     title: {
-        color: "black"
+        color: "#ADFFE8"
     },
     subtitle: {
-        color: "grey",
+        color: "#ADFFE8",
         marginBottom: "3rem"
     },
     typedContainer: {
@@ -46,7 +46,7 @@ const Header = () => {
             <Typography 
             className={classes.title}
             variant="h4">
-                <Typed strings={["Jake Wagner"]} typeSpeed={40}/>
+                <Typed strings={["Jake Wagner"]} typeSpeed={80}/>
             </Typography>
             <br/>
             <Typography 
