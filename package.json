@@ -25,6 +25,7 @@
     "@material-ui/styles": "^4.11.2",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
+    "react-particles-js": "^3.4.1",
     "react-typed": "^1.2.0"
   }
 }
