@@ -21,9 +21,18 @@ ContactMail
 
 const Navbar = () => {
     return (
-        <div>
-            
-        </div>
+        <Box component="nav">
+            <AppBar position="static" style={{background: '#FFAFE0'}}>
+                <Toolbar>
+                    <IconButton>
+                        <ArrowBack style={{color: '#ADFFB1'}}/>
+                    </IconButton>
+                    <Typography variant="h5" style={{color: '#ADFFE8'}}>
+                        Portfolio
+                    </Typography>
+                </Toolbar>
+            </AppBar>
+        </Box>
     )
 }
 
