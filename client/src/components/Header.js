@@ -7,13 +7,13 @@ Grid,
 Box
 } from "@material-ui/core"
 import Typed from "react-typed"
-import avatar from '../images/avatar.JPG'
+import avatar from '../images/avatar.png'
 
 // CSS STYLES
 const useStyles = makeStyles(theme=> ({
     avatar: {
-        width: theme.spacing(15),
-        height: theme.spacing(15),
+        width: theme.spacing(20),
+        height: theme.spacing(20),
         margin: theme.spacing(1),
     },
     title: {
