@@ -17,11 +17,13 @@ const useStyles = makeStyles(theme=> ({
         margin: theme.spacing(1),
     },
     title: {
-        color: "#ADFFE8"
+        color: "#273b49",
+        fontFamily: "Arial"
     },
     subtitle: {
-        color: "#ADFFE8",
-        marginBottom: "3rem"
+        color: "#273b49",
+        marginBottom: "3rem",
+        fontFamily: "Arial"
     },
     typedContainer: {
         position: "absolute",

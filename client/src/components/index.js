@@ -33,7 +33,7 @@ const Home = () => {
                             type: "circle",
                             stroke: {
                                 width: 1,
-                                color: "#ADB7FF"
+                                color: "#b2af97"
                             }
                         },
                         size: {
