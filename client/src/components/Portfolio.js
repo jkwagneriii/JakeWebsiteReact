@@ -22,18 +22,34 @@ const useStyles = makeStyles({
         height: "100%"
     },
     cardContainer: {
-        maxwidth: 345,
+        maxwidth: 300,
         padding: "3rem",
-        margin: "5rem auto"
+        margin: "5rem 1rem",
+        background: "#efd5b6"
+    },
+    title: {
+        textDecoration: "underline"
     }
 })
 
 const Portfolio = () => {
     const classes = useStyles()
+    // GIPHS 
     const project1 = "https://giphy.com/embed/7D3CFhXBdpJoiQ58hG"
     const project2 = "https://giphy.com/embed/QQLOmrJI75wfHPm3Gs"
     const project3 = "https://giphy.com/embed/CveFhs9z9l5bsNmH6O"
     const project4 = "https://giphy.com/embed/WjVp4SzxmNLzV1l3ax"
+
+    // BUTTON LINKS 
+    const smugLiveLink = "https://still-sands-13571.herokuapp.com/"
+    const smugGitLink = "https://github.com/jyocus/Smug-Sheep"
+    const vegLiveLink = "https://dry-oasis-44384.herokuapp.com/"
+    const vegGitLink = "https://github.com/aeesley/veggie-vision"
+    const dogLiveLink = "https://jkwagneriii.github.io/Project_1_DogsDog/"
+    const dogGitLink = "https://github.com/jkwagneriii/Project_1_DogsDog"
+    const foodLiveLink = "https://quiet-atoll-74462.herokuapp.com/"
+    const foodGitLink = "https://github.com/jkwagneriii/React_Recipes"
+
    
     return (
         <>
@@ -50,28 +66,30 @@ const Portfolio = () => {
                             alt="Project 1"
                             image={project1} />
                             <CardContent>
-                                <Typography gutterBottom variant="h5">
+                                <Typography className={classes.title} gutterBottom variant="h5">
                                     Smug Sheep
                                 </Typography>
                                 <Typography variant="body2" color="red" component="p">
-                                In the year 2020 we all learned a lot about ourselves as well as the world around us. Often, focusing on the negative is easier than focusing on the positive. Because of that, the team at Smug Sheep wanted to provide a space to share the good in your life, no matter how big or small, in a safe anonymous environment. Maybe a stranger bought your groceries or maybe your neighbor just happened to bring in your plants before the big storm...either way it deserves recognition! So hop on over the the Smug Sheep feed, join the flock, and start shearing that negativity away one kind story at a time.
+                                Often, focusing on the negative is easier than focusing on the positive. Because of that, the team at Smug Sheep wanted to provide a space to share the good in your life, no matter how big or small, in a safe anonymous environment. So hop on over the the Smug Sheep feed, join the flock, and start shearing that negativity away one kind story at a time.
                                 </Typography>
                                 <Divider />
                                 <Typography variant="caption">
                                 This application uses React, JavaScript, Material UI, MongoDB, Node, Express, Particles, and Auth0
                                 </Typography>
                             </CardContent>
+                        </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="#758877">
-                                    Share
+                                <Button target="_blank" rel="noopener" href={smugGitLink} size="small" color="#758877">
+                                    GitHub Repository
                                 </Button>
-                                <Button size="small" color="#273b49">
+                                <Button target="_blank" rel="noopener" href={smugLiveLink} size="small" color="#273b49">
                                     Live Demo
                                 </Button>
                             </CardActions>    
-                        </CardActionArea>
                     </Card>
+                </Grid>    
                     {/* Project 2  */}
+                <Grid item xs={12} sm={8} md={6}>    
                     <Card className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia
@@ -80,7 +98,7 @@ const Portfolio = () => {
                             alt="Project 2"
                             image={project2} />
                             <CardContent>
-                            <Typography gutterBottom variant="h5">
+                            <Typography className={classes.title} gutterBottom variant="h5">
                                     Veggie Vision
                                 </Typography>
                                 <Typography variant="body2" color="red" component="p">
@@ -94,17 +112,19 @@ const Portfolio = () => {
                                 This application uses Handlebars, JavaScript, Jquery, MySQL, Node, and Bootstrap
                                 </Typography>
                             </CardContent>
+                        </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="#758877">
-                                    Share
+                                <Button target="_blank" rel="noopener" href={vegGitLink} size="small" color="#758877">
+                                    GitHub Repository
                                 </Button>
-                                <Button size="small" color="#273b49">
+                                <Button target="_blank" rel="noopener" href={vegLiveLink} size="small" color="#273b49">
                                     Live Demo
                                 </Button>
                             </CardActions>    
-                        </CardActionArea>
                     </Card>
+                </Grid>    
                     {/* Project 3  */}
+                <Grid item xs={12} sm={8} md={6}>    
                     <Card className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia
@@ -113,7 +133,7 @@ const Portfolio = () => {
                             alt="Project 2"
                             image={project3} />
                             <CardContent>
-                            <Typography gutterBottom variant="h5">
+                            <Typography className={classes.title} gutterBottom variant="h5">
                                     What's Your Dog, Dog?
                                 </Typography>
                                 <Typography variant="body2" color="red" component="p">
@@ -126,17 +146,19 @@ const Portfolio = () => {
                                 This application uses HTML5, PureCSS, and REST API
                                 </Typography>
                             </CardContent>
+                        </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="#758877">
-                                    Share
+                                <Button target="_blank" rel="noopener" href={dogGitLink} size="small" color="#758877">
+                                    GitHub Repository
                                 </Button>
-                                <Button size="small" color="#273b49">
+                                <Button target="_blank" rel="noopener" href={dogLiveLink} size="small" color="#273b49">
                                     Live Demo
                                 </Button>
                             </CardActions>    
-                        </CardActionArea>
                     </Card>
+                </Grid>    
                     {/* Project 4  */}
+                <Grid item xs={12} sm={8} md={6}>    
                     <Card className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia
@@ -145,7 +167,7 @@ const Portfolio = () => {
                             alt="Project 2"
                             image={project4} />
                             <CardContent>
-                            <Typography gutterBottom variant="h5">
+                            <Typography className={classes.title} gutterBottom variant="h5">
                                     React Recipes
                                 </Typography>
                                 <Typography variant="body2" color="red" component="p">
@@ -156,16 +178,16 @@ const Portfolio = () => {
                                 This application uses React, UUID, and Particles
                                 </Typography>
                             </CardContent>
+                        </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="#758877">
-                                    Share
+                                <Button target="_blank" rel="noopener" href={foodGitLink} size="small" color="#758877">
+                                    GitHub Repository
                                 </Button>
-                                <Button size="small" color="#273b49">
+                                <Button target="_blank" rel="noopener" href={foodLiveLink} size="small" color="#273b49">
                                     Live Demo
                                 </Button>
                             </CardActions>    
-                        </CardActionArea>
-                    </Card>
+                    </Card>  
                 </Grid>
             </Grid>
         </Box>
