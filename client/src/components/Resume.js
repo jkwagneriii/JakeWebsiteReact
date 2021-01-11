@@ -115,59 +115,60 @@ const Resume = () => {
                 </Typography>
                 <Box component="div" className={classes.timeLine}>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                    2013
+                    2021 - Present
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" align="center" className={classes.subHeading}>
-                            Web Design
+                            Full-Stack Web Development Tutor
                         </Typography>
                         <Typography variant="body1" align="center" style={{color: '#273b49'}}>
-                            Company Name
+                            Trilogy Education
                         </Typography>
                         <Typography variant="subtitle1" align="center" style={{color: 'white'}}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et quo soluta necessitatibus, ipsum quam nobis eligendi vel maxime dolore! Odit labore commodi perspiciatis iure nobis tenetur saepe unde repellendus!
+                        Helping Full-Stack Web Development students gain insight, knowledge and confidence in a 1:1 setting.
+                        As tutors, we advise success strategies in the boot camp, and beyond. Tutors are responsible for managing students, sessions, schedules, and all communication with students and Central Support.
                         </Typography>
                     </Box>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                    2013
+                    2018-2020
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" align="center" className={classes.subHeading}>
-                            Web Design
+                            Drink Developer/Shift Lead
                         </Typography>
                         <Typography variant="body1" align="center" style={{color: '#273b49'}}>
-                            Company Name
+                            Intelligentsia Coffee
                         </Typography>
                         <Typography variant="subtitle1" align="center" style={{color: 'white'}}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et quo soluta necessitatibus, ipsum quam nobis eligendi vel maxime dolore! Odit labore commodi perspiciatis iure nobis tenetur saepe unde repellendus!
+                             Designed original seasonal beverages for Intelligentsia’s menu nationwide. Managed store operations and increased seasonal revenue. Created cocktail menus for special events and VIP clients.
                         </Typography>
                     </Box>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                    2013
+                    2017-2018
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" align="center" className={classes.subHeading}>
-                            Web Design
+                            Drink Maker
                         </Typography>
                         <Typography variant="body1" align="center" style={{color: '#273b49'}}>
-                            Company Name
+                            The Aviary
                         </Typography>
                         <Typography variant="subtitle1" align="center" style={{color: 'white'}}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et quo soluta necessitatibus, ipsum quam nobis eligendi vel maxime dolore! Odit labore commodi perspiciatis iure nobis tenetur saepe unde repellendus!
+                            Thrived in a fast paced, hyper focused, physically and mentally demanding workplace. Received a crash course in service of the highest quality and true attention to detail. Delivered excellent service to high end clientele. 
                         </Typography>
                     </Box>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                    2013
+                    2015-2017
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" align="center" className={classes.subHeading}>
-                            Web Design
+                            Shipping Manager
                         </Typography>
                         <Typography variant="body1" align="center" style={{color: '#273b49'}}>
-                            Company Name
+                            United Group Printing
                         </Typography>
                         <Typography variant="subtitle1" align="center" style={{color: 'white'}}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et quo soluta necessitatibus, ipsum quam nobis eligendi vel maxime dolore! Odit labore commodi perspiciatis iure nobis tenetur saepe unde repellendus!
+                            Ran the shipping department for three consecutive summers. Handled all the deliveries as well as received all new products. Maintained the warehouse and kept it clean and orderly. 
                         </Typography>
                     </Box>
                 </Box>
