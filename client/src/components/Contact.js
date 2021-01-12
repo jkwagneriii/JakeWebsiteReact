@@ -66,65 +66,65 @@ const Contact = () => {
         <>
             <Box component="div">
                 <Navbar />
-                                    <Particles 
-                                        canvasClassName={classes.particlesCanvas}
-                                        params={{
-                                            particles: {
-                                                number: {
-                                                    value: 45,
-                                                    density: {
-                                                        enable: true,
-                                                        value_area: 900
-                                                    }
-                                                },
-                                                shape: {
-                                                    type: "circle",
-                                                    stroke: {
-                                                        width: 1,
-                                                        color: "#b2af97"
-                                                    }
-                                                },
-                                                size: {
-                                                    value: 8,
-                                                    random: true,
-                                                    anim: {
-                                                        enable: true,
-                                                        speed: 5,
-                                                        size_min: 0.1,
-                                                        sync: true
-                                                    }
-                                                },
-                                                opacity: {
-                                                    value: 1,
-                                                    random: true,
-                                                    anim: {
-                                                        enable: true,
-                                                        speed: 1,
-                                                        opacity_min: 0.1,
-                                                        sync: true
-                                                    }
-                                                }
-                                            }
-                                        }}
-                                    />
+                <Particles
+                    canvasClassName={classes.particlesCanvas}
+                    params={{
+                        particles: {
+                            number: {
+                                value: 45,
+                                density: {
+                                    enable: true,
+                                    value_area: 900
+                                }
+                            },
+                            shape: {
+                                type: "circle",
+                                stroke: {
+                                    width: 1,
+                                    color: "#b2af97"
+                                }
+                            },
+                            size: {
+                                value: 8,
+                                random: true,
+                                anim: {
+                                    enable: true,
+                                    speed: 5,
+                                    size_min: 0.1,
+                                    sync: true
+                                }
+                            },
+                            opacity: {
+                                value: 1,
+                                random: true,
+                                anim: {
+                                    enable: true,
+                                    speed: 1,
+                                    opacity_min: 0.1,
+                                    sync: true
+                                }
+                            }
+                        }
+                    }}
+                />
                 <Grid container justify="center">
                     <Box component="div" className={classes.mainContainer}>
                         <Grid item xs={12} sm={12} md={12}>
                             <Card>
                                 <CardActionArea>
                                     <Typography className={classes.heading} variant="h5">
-                                    <Typed strings={["GET IN TOUCH"]} typeSpeed={80}/>
+                                        <Typed strings={["GET IN TOUCH"]} typeSpeed={80} />
                                     </Typography>
-                                    <CardMedia 
-                                    className={classes.resume}
-                                    component="img"
-                                    height="auto"
-                                    image={resume}
-                                    title="Resume"
+                                    <CardMedia
+                                        className={classes.resume}
+                                        component="img"
+                                        height="auto"
+                                        image={resume}
+                                        title="Resume"
                                     />
                                 </CardActionArea>
-                                <Footer/>
-                            </Card> 
+                                <Footer />
+                            </Card>
                         </Grid>
                     </Box>
                 </Grid>
