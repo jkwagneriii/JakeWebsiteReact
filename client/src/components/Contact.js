@@ -2,17 +2,16 @@ import React from 'react'
 import {makeStyles, withStyles} from '@material-ui/core/styles'
 import {
 TextField, 
-Typography, 
-Button, 
+Typography,  
 Grid, 
 Box, 
 Card, 
 CardMedia, 
 CardActionArea } from '@material-ui/core'
-// import SendIcon from '@material-ui/icons/Send'
+import Typed from "react-typed"
 import Navbar from './Navbar'
 import Footer from './Footer'
-import resume from '../images/attemptResume.png'
+import resume from '../images/PrettyResume.png'
 
 const InputField = withStyles({
     root: {
@@ -42,9 +41,16 @@ const useStyles = makeStyles(theme=>({
         width: "auto"
     },
     heading: {
-        color: "#efd5b6",
+        color: "#273b49",
         textAlign: "center",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        background: "#758877",
+        padding: "6px",
+        borderStyle: "none",
+        fontWeight: "bold"
+    },
+    mainContainer: {
+        margin: "4rem",
     }
 }));
 
@@ -55,30 +61,24 @@ const Contact = () => {
             <Box component="div">
                 <Navbar />
                 <Grid container justify="center">
-                    <Box component="form">
-                        <Card>
-                            <CardActionArea>
-                                <Typography className={classes.heading} variant="h5">
-                                    Get in touch
-                                </Typography>
-                                <CardMedia 
-                                className={classes.resume}
-                                component="img"
-                                height="auto"
-                                image={resume}
-                                title="Resume"
-                                />
-                            </CardActionArea>
-                            <Footer/>
-                            
-                        </Card> 
-                        {/* <InputField 
-                        fullWidth={true}
-                        label="Uh"
-                        variant="outlined"
-                        margin="dense"
-                        size="medium"
-                        /> */}
+                    <Box component="div" className={classes.mainContainer}>
+                        <Grid item xs={12} sm={12} md={12}>
+                            <Card>
+                                <CardActionArea>
+                                    <Typography className={classes.heading} variant="h5">
+                                    <Typed strings={["GET IN TOUCH"]} typeSpeed={80}/>
+                                    </Typography>
+                                    <CardMedia 
+                                    className={classes.resume}
+                                    component="img"
+                                    height="auto"
+                                    image={resume}
+                                    title="Resume"
+                                    />
+                                </CardActionArea>
+                                <Footer/>
+                            </Card> 
+                        </Grid>
                     </Box>
                 </Grid>
             </Box>
