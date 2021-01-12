@@ -1,8 +1,17 @@
 import React from 'react'
 import {makeStyles, withStyles} from '@material-ui/core/styles'
-import {TextField, Typography, Button, Grid, Box, Card, CardMedia, CardActionArea } from '@material-ui/core'
-import SendIcon from '@material-ui/icons/Send'
+import {
+TextField, 
+Typography, 
+Button, 
+Grid, 
+Box, 
+Card, 
+CardMedia, 
+CardActionArea } from '@material-ui/core'
+// import SendIcon from '@material-ui/icons/Send'
 import Navbar from './Navbar'
+import Footer from './Footer'
 import resume from '../images/attemptResume.png'
 
 const InputField = withStyles({
@@ -29,7 +38,13 @@ const InputField = withStyles({
 
 const useStyles = makeStyles(theme=>({
     resume: {
-        
+        height: "500px",
+        width: "auto"
+    },
+    heading: {
+        color: "#efd5b6",
+        textAlign: "center",
+        textTransform: "uppercase"
     }
 }));
 
@@ -38,27 +53,32 @@ const Contact = () => {
     return (
         <>
             <Box component="div">
+                <Navbar />
                 <Grid container justify="center">
                     <Box component="form">
-                        <Typography variant="h5">
-                            Get in touch!
-                        </Typography>
                         <Card>
                             <CardActionArea>
-                            <CardMedia 
-                            className={classes.resume}
-                            component="img"
-                            height="auto"
-                            image={resume}
-                            title="Resume"
-                            />
+                                <Typography className={classes.heading} variant="h5">
+                                    Get in touch
+                                </Typography>
+                                <CardMedia 
+                                className={classes.resume}
+                                component="img"
+                                height="auto"
+                                image={resume}
+                                title="Resume"
+                                />
                             </CardActionArea>
-                        </Card>
-                        <InputField 
+                            <Footer/>
+                            
+                        </Card> 
+                        {/* <InputField 
                         fullWidth={true}
                         label="Uh"
                         variant="outlined"
-                        />
+                        margin="dense"
+                        size="medium"
+                        /> */}
                     </Box>
                 </Grid>
             </Box>
