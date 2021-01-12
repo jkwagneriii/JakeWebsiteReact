@@ -14,6 +14,8 @@ This is a personal site focused on web development skills.
 * [Particles](https://www.npmjs.com/package/particles-bg)
 * [Typed](https://www.npmjs.com/package/react-typed)  
 
+*Huge shout out to [80/20 Coding](https://www.youtube.com/channel/UCobZg0ym72ZZPqOQNB_qJnw) for their informative React and Material-UI walk through videos.*
+
 
 ## Links 
 * [Heroku Deployment](https://jake-website-react.herokuapp.com/)
