@@ -12,6 +12,7 @@ import Typed from "react-typed"
 import Navbar from './Navbar'
 import Footer from './Footer'
 import resume from '../images/PrettyResume.png'
+import Particles from 'react-particles-js'
 
 const InputField = withStyles({
     root: {
@@ -51,6 +52,11 @@ const useStyles = makeStyles(theme=>({
     },
     mainContainer: {
         margin: "4rem",
+    },
+    particlesCanvas: {
+        position: 'absolute',
+        align: 'center',
+        opacity: 0.5
     }
 }));
 
@@ -60,6 +66,47 @@ const Contact = () => {
         <>
             <Box component="div">
                 <Navbar />
+                                    <Particles 
+                                        canvasClassName={classes.particlesCanvas}
+                                        params={{
+                                            particles: {
+                                                number: {
+                                                    value: 45,
+                                                    density: {
+                                                        enable: true,
+                                                        value_area: 900
+                                                    }
+                                                },
+                                                shape: {
+                                                    type: "circle",
+                                                    stroke: {
+                                                        width: 1,
+                                                        color: "#b2af97"
+                                                    }
+                                                },
+                                                size: {
+                                                    value: 8,
+                                                    random: true,
+                                                    anim: {
+                                                        enable: true,
+                                                        speed: 5,
+                                                        size_min: 0.1,
+                                                        sync: true
+                                                    }
+                                                },
+                                                opacity: {
+                                                    value: 1,
+                                                    random: true,
+                                                    anim: {
+                                                        enable: true,
+                                                        speed: 1,
+                                                        opacity_min: 0.1,
+                                                        sync: true
+                                                    }
+                                                }
+                                            }
+                                        }}
+                                    />
                 <Grid container justify="center">
                     <Box component="div" className={classes.mainContainer}>
                         <Grid item xs={12} sm={12} md={12}>
