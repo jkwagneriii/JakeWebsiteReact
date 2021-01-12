@@ -13,8 +13,7 @@ Button,
 Typography
 } from '@material-ui/core'
 import Navbar from './Navbar'
-// import project1 from '../images/Smug_landing.png'
-import project2 from '../images/VV_readme_screenshot.png'
+
 
 const useStyles = makeStyles({
     mainContainer: {
@@ -24,7 +23,7 @@ const useStyles = makeStyles({
     cardContainer: {
         maxwidth: 300,
         padding: "3rem",
-        margin: "5rem 1rem",
+        margin: "5rem 2rem",
         background: "#efd5b6"
     },
     title: {
