@@ -36,7 +36,7 @@ const Portfolio = () => {
     // GIPHS 
     const project1 = "https://giphy.com/embed/7D3CFhXBdpJoiQ58hG"
     const project2 = "https://giphy.com/embed/QQLOmrJI75wfHPm3Gs"
-    const project3 = "https://giphy.com/embed/CveFhs9z9l5bsNmH6O"
+    const project3 = "https://giphy.com/embed/AtRDoYyRD1agOamjPn"
     const project4 = "https://giphy.com/embed/WjVp4SzxmNLzV1l3ax"
 
     // BUTTON LINKS 
@@ -44,8 +44,8 @@ const Portfolio = () => {
     const smugGitLink = "https://github.com/jyocus/Smug-Sheep"
     const vegLiveLink = "https://dry-oasis-44384.herokuapp.com/"
     const vegGitLink = "https://github.com/aeesley/veggie-vision"
-    const dogLiveLink = "https://jkwagneriii.github.io/Project_1_DogsDog/"
-    const dogGitLink = "https://github.com/jkwagneriii/Project_1_DogsDog"
+    const movieLiveLink = "https://movie-nomination.herokuapp.com/"
+    const movieGitLink = "https://github.com/jkwagneriii/MovieAppReact"
     const foodLiveLink = "https://quiet-atoll-74462.herokuapp.com/"
     const foodGitLink = "https://github.com/jkwagneriii/React_Recipes"
 
@@ -133,24 +133,22 @@ const Portfolio = () => {
                             image={project3} />
                             <CardContent>
                             <Typography className={classes.title} gutterBottom variant="h5">
-                                    What's Your Dog, Dog?
+                                    The Shoppies
                                 </Typography>
                                 <Typography variant="body2" color="red" component="p">
-                                Here at What's Your Dog, Dog? We are committed to matching you up with your new best friend! We
-                                understand that dogs, just like people, have a wide range of personalities. So, scroll down and
-                                begin your search for a new buddy!
+                                This is a mobile first web application that can search TMDB for movies, and allows the user to save their favorite films they feel should be up for nomination. The user can save these nominations to their local storage as well as remove nominees from their nomination list.
                                 </Typography>
                                 <Divider />
                                 <Typography variant="caption">
-                                This application uses HTML5, PureCSS, and REST API
+                                This application uses React, Material-UI, Particles, Typed, and TMDB
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                             <CardActions>
-                                <Button target="_blank" rel="noopener" href={dogGitLink} size="small" color="#758877">
+                                <Button target="_blank" rel="noopener" href={movieGitLink} size="small" color="#758877">
                                     GitHub Repository
                                 </Button>
-                                <Button target="_blank" rel="noopener" href={dogLiveLink} size="small" color="#273b49">
+                                <Button target="_blank" rel="noopener" href={movieLiveLink} size="small" color="#273b49">
                                     Live Demo
                                 </Button>
                             </CardActions>    
