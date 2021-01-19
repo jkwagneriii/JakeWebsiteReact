@@ -41,6 +41,7 @@ const Portfolio = () => {
     let vegCard = useRef(null)
     let movieCard = useRef(null)
     let foodCard = useRef(null)
+    let threeCard = useRef(null)
 
 
     useEffect(() => {
@@ -76,6 +77,14 @@ const Portfolio = () => {
                 ease: Power3.easeIn
             }
         )
+        TweenMax.to(
+            threeCard,
+            2,
+            {
+                opacity: 1,
+                ease: Power3.easeIn
+            }
+        )
     }, [])
 
     // GIPHS 
@@ -83,6 +92,7 @@ const Portfolio = () => {
     const project2 = "https://giphy.com/embed/QQLOmrJI75wfHPm3Gs"
     const project3 = "https://giphy.com/embed/AtRDoYyRD1agOamjPn"
     const project4 = "https://giphy.com/embed/WjVp4SzxmNLzV1l3ax"
+    const project5 = "https://giphy.com/embed/XmO5gUC2ROtcdm9ByY"
 
     // BUTTON LINKS 
     const smugLiveLink = "https://still-sands-13571.herokuapp.com/"
@@ -93,6 +103,8 @@ const Portfolio = () => {
     const movieGitLink = "https://github.com/jkwagneriii/MovieAppReact"
     const foodLiveLink = "https://quiet-atoll-74462.herokuapp.com/"
     const foodGitLink = "https://github.com/jkwagneriii/React_Recipes"
+    const threeLiveLink = "https://squid-3d.herokuapp.com/"
+    const threeGitLink = "https://github.com/jkwagneriii/Squid3D"
 
    
     return (
@@ -107,7 +119,7 @@ const Portfolio = () => {
                             <CardMedia
                             frameBorder="0"
                             component="iframe"
-                            alt="Project 1"
+                            alt="Smug Sheep"
                             image={project1} />
                             <CardContent>
                                 <Typography className={classes.title} gutterBottom variant="h5">
@@ -139,7 +151,7 @@ const Portfolio = () => {
                             <CardMedia
                             frameBorder="0"
                             component="iframe"
-                            alt="Project 2"
+                            alt="Veggie Vision"
                             image={project2} />
                             <CardContent>
                             <Typography className={classes.title} gutterBottom variant="h5">
@@ -174,7 +186,7 @@ const Portfolio = () => {
                             <CardMedia
                             frameBorder="0"
                             component="iframe"
-                            alt="Project 2"
+                            alt="The Shoppies"
                             image={project3} />
                             <CardContent>
                             <Typography className={classes.title} gutterBottom variant="h5">
@@ -206,7 +218,7 @@ const Portfolio = () => {
                             <CardMedia
                             frameBorder="0"
                             component="iframe"
-                            alt="Project 2"
+                            alt="React Recipes"
                             image={project4} />
                             <CardContent>
                             <Typography className={classes.title} gutterBottom variant="h5">
@@ -226,6 +238,38 @@ const Portfolio = () => {
                                     GitHub Repository
                                 </Button>
                                 <Button target="_blank" rel="noopener" href={foodLiveLink} size="small" color="#273b49">
+                                    Live Demo
+                                </Button>
+                            </CardActions>    
+                    </Card>  
+                </Grid>
+                {/* Project 4  */}
+                <Grid item xs={12} sm={8} md={6}>    
+                    <Card ref={ el => threeCard = el }  className={classes.cardContainer}>
+                        <CardActionArea>
+                            <CardMedia
+                            frameBorder="0"
+                            component="iframe"
+                            alt="React Three Fiber"
+                            image={project5} />
+                            <CardContent>
+                            <Typography className={classes.title} gutterBottom variant="h5">
+                                    React Three Fiber
+                                </Typography>
+                                <Typography variant="body2" color="red" component="p">
+                                This is a test repo for messing around with React Three Fiber
+                                </Typography>
+                                <Divider />
+                                <Typography variant="caption">
+                                This application uses React, React-Three-Fiber, React-Spring, Drei, and Three
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                            <CardActions>
+                                <Button target="_blank" rel="noopener" href={threeGitLink} size="small" color="#758877">
+                                    GitHub Repository
+                                </Button>
+                                <Button target="_blank" rel="noopener" href={threeLiveLink} size="small" color="#273b49">
                                     Live Demo
                                 </Button>
                             </CardActions>    
