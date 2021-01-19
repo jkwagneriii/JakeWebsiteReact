@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 import {
 Typography,
@@ -7,6 +7,7 @@ Grid,
 Box
 } from "@material-ui/core"
 import Typed from "react-typed"
+import { TweenMax, Power3 } from 'gsap'
 import avatar from '../images/avatar.png'
 
 // CSS STYLES
@@ -15,6 +16,9 @@ const useStyles = makeStyles(theme=> ({
         width: theme.spacing(20),
         height: theme.spacing(20),
         margin: theme.spacing(1),
+        position: 'absolute',
+        top: '-450px',
+        opacity: 0
     },
     title: {
         color: "#273b49",
@@ -39,11 +43,31 @@ const useStyles = makeStyles(theme=> ({
 
 const Header = () => {
     const classes = useStyles()
+
+    let avatarFade = useRef(null)
+
+    useEffect(() => {
+        TweenMax.to(
+            avatarFade,
+            2,
+            {
+                opacity: 1,
+                y: 300,
+                ease: Power3.easeIn
+            }
+
+        )
+    }, [])
+
     return (
     <>
         <Box className={classes.typedContainer}>
             <Grid container justify="center">
-            <Avatar className={classes.avatar} src={avatar} alt="Jake Wagner" />
+            <Avatar
+            ref={el => {avatarFade = el}}
+            className={classes.avatar} 
+            src={avatar} 
+            alt="Jake Wagner" />
             </Grid>
             <Typography 
             className={classes.title}
