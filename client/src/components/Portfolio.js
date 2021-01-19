@@ -46,7 +46,7 @@ const Portfolio = () => {
     useEffect(() => {
         TweenMax.to(
             smugCard,
-            1,
+            2,
             {
                 opacity: 1,
                 ease: Power3.easeIn
@@ -62,7 +62,7 @@ const Portfolio = () => {
         )
         TweenMax.to(
             movieCard,
-            3,
+            2,
             {
                 opacity: 1,
                 ease: Power3.easeIn
@@ -70,7 +70,7 @@ const Portfolio = () => {
         )
         TweenMax.to(
             foodCard,
-            4,
+            2,
             {
                 opacity: 1,
                 ease: Power3.easeIn
