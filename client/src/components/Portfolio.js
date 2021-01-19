@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 import {
 Box,
@@ -12,6 +12,7 @@ CardMedia,
 Button,
 Typography
 } from '@material-ui/core'
+import { TweenMax, Power3 } from 'gsap'
 import Navbar from './Navbar'
 
 
@@ -22,9 +23,11 @@ const useStyles = makeStyles({
     },
     cardContainer: {
         maxwidth: 300,
+        height: "503px",
         padding: "3rem",
         margin: "5rem 2rem",
-        background: "#efd5b6"
+        background: "#efd5b6",
+        opacity: 0
     },
     title: {
         textDecoration: "underline"
@@ -33,6 +36,48 @@ const useStyles = makeStyles({
 
 const Portfolio = () => {
     const classes = useStyles()
+
+    let smugCard = useRef(null)
+    let vegCard = useRef(null)
+    let movieCard = useRef(null)
+    let foodCard = useRef(null)
+
+
+    useEffect(() => {
+        TweenMax.to(
+            smugCard,
+            1,
+            {
+                opacity: 1,
+                ease: Power3.easeIn
+            }
+        )
+        TweenMax.to(
+            vegCard,
+            2,
+            {
+                opacity: 1,
+                ease: Power3.easeIn
+            }
+        )
+        TweenMax.to(
+            movieCard,
+            3,
+            {
+                opacity: 1,
+                ease: Power3.easeIn
+            }
+        )
+        TweenMax.to(
+            foodCard,
+            4,
+            {
+                opacity: 1,
+                ease: Power3.easeIn
+            }
+        )
+    }, [])
+
     // GIPHS 
     const project1 = "https://giphy.com/embed/7D3CFhXBdpJoiQ58hG"
     const project2 = "https://giphy.com/embed/QQLOmrJI75wfHPm3Gs"
@@ -57,7 +102,7 @@ const Portfolio = () => {
             <Grid container justify="center" alignItems="center">
                 <Grid item xs={12} sm={8} md={6}>
                     {/* Project 1  */}
-                    <Card className={classes.cardContainer}>
+                    <Card ref={ el => smugCard = el } className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia
                             frameBorder="0"
@@ -89,7 +134,7 @@ const Portfolio = () => {
                 </Grid>    
                     {/* Project 2  */}
                 <Grid item xs={12} sm={8} md={6}>    
-                    <Card className={classes.cardContainer}>
+                    <Card  ref={ el => vegCard = el } className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia
                             frameBorder="0"
@@ -124,7 +169,7 @@ const Portfolio = () => {
                 </Grid>    
                     {/* Project 3  */}
                 <Grid item xs={12} sm={8} md={6}>    
-                    <Card className={classes.cardContainer}>
+                    <Card ref={ el => movieCard = el } className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia
                             frameBorder="0"
@@ -156,7 +201,7 @@ const Portfolio = () => {
                 </Grid>    
                     {/* Project 4  */}
                 <Grid item xs={12} sm={8} md={6}>    
-                    <Card className={classes.cardContainer}>
+                    <Card ref={ el => foodCard = el }  className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia
                             frameBorder="0"
