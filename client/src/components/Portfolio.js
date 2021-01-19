@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     },
     cardContainer: {
         maxwidth: 300,
-        height: "503px",
+        height: "100%",
         padding: "3rem",
         margin: "5rem 2rem",
         background: "#efd5b6",
